@@ -7,6 +7,7 @@ package com.calculadora.view;
 import groovy.lang.Binding;
 import groovy.lang.GroovyShell;
 import java.awt.Color;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -18,12 +19,13 @@ public class Main extends javax.swing.JFrame {
     Binding binding = new Binding();
     GroovyShell gshell = new GroovyShell();
     String formula = "";
+    
 
     /**
      * Creates new form Main
      */
     public Main() {
-
+        this.setIconImage(new ImageIcon("src/main/resources/icones/icone.png").getImage());
         initComponents();
     }
 
