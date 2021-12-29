@@ -13,14 +13,17 @@ import java.awt.Color;
  * @author marcelo
  */
 public class Main extends javax.swing.JFrame {
-    int LayoutX,LayoutY;
+
+    int LayoutX, LayoutY;
     Binding binding = new Binding();
     GroovyShell gshell = new GroovyShell();
     String formula = "";
+
     /**
      * Creates new form Main
      */
     public Main() {
+
         initComponents();
     }
 
@@ -846,9 +849,9 @@ public class Main extends javax.swing.JFrame {
         try {
             if (tfd_formula.getText().equals("")) {
                 tfd_result.setText("0");
-            }else{
+            } else {
                 tfd_formula.setText("");
-                tfd_result.setText( gshell.evaluate(formula).toString() );
+                tfd_result.setText(gshell.evaluate(formula).toString());
             }
         } catch (Exception e) {
             tfd_result.setText("ERRO");
@@ -857,222 +860,222 @@ public class Main extends javax.swing.JFrame {
 
     private void btn_limparMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_limparMouseEntered
         // TODO add your handling code here:
-        btn_limpar.setBackground(new Color(78,43,181));
+        btn_limpar.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_limparMouseEntered
 
     private void btn_limparMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_limparMouseExited
         // TODO add your handling code here:
-        btn_limpar.setBackground(new Color(40,46,62));
+        btn_limpar.setBackground(new Color(40, 46, 62));
     }//GEN-LAST:event_btn_limparMouseExited
 
     private void btn_abreParenteseMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_abreParenteseMouseEntered
         // TODO add your handling code here:
-        btn_abreParentese.setBackground(new Color(78,43,181));
+        btn_abreParentese.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_abreParenteseMouseEntered
 
     private void btn_abreParenteseMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_abreParenteseMouseExited
         // TODO add your handling code here:
-         btn_abreParentese.setBackground(new Color(40,46,62));
+        btn_abreParentese.setBackground(new Color(40, 46, 62));
     }//GEN-LAST:event_btn_abreParenteseMouseExited
 
     private void btn_fechaParenteseMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_fechaParenteseMouseEntered
         // TODO add your handling code here:
-        btn_fechaParentese.setBackground(new Color(78,43,181));
+        btn_fechaParentese.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_fechaParenteseMouseEntered
 
     private void btn_fechaParenteseMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_fechaParenteseMouseExited
         // TODO add your handling code here:
-        btn_fechaParentese.setBackground(new Color(40,46,62));
+        btn_fechaParentese.setBackground(new Color(40, 46, 62));
     }//GEN-LAST:event_btn_fechaParenteseMouseExited
 
     private void btn_multiplicarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_multiplicarMouseEntered
         // TODO add your handling code here:
-        btn_multiplicar.setBackground(new Color(78,43,181));
+        btn_multiplicar.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_multiplicarMouseEntered
 
     private void btn_multiplicarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_multiplicarMouseExited
         // TODO add your handling code here:
-        btn_multiplicar.setBackground(new Color(40,46,62));
+        btn_multiplicar.setBackground(new Color(40, 46, 62));
     }//GEN-LAST:event_btn_multiplicarMouseExited
 
     private void btn_divisaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_divisaoMouseEntered
         // TODO add your handling code here:
-        btn_divisao.setBackground(new Color(78,43,181));
+        btn_divisao.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_divisaoMouseEntered
 
     private void btn_divisaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_divisaoMouseExited
         // TODO add your handling code here:
-        btn_divisao.setBackground(new Color(40,46,62));
+        btn_divisao.setBackground(new Color(40, 46, 62));
     }//GEN-LAST:event_btn_divisaoMouseExited
 
     private void btn_subtrairMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_subtrairMouseEntered
         // TODO add your handling code here:
-        btn_subtrair.setBackground(new Color(78,43,181));
+        btn_subtrair.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_subtrairMouseEntered
 
     private void btn_subtrairMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_subtrairMouseExited
         // TODO add your handling code here:
-        btn_subtrair.setBackground(new Color(40,46,62));
+        btn_subtrair.setBackground(new Color(40, 46, 62));
     }//GEN-LAST:event_btn_subtrairMouseExited
 
     private void btn_somaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_somaMouseEntered
         // TODO add your handling code here:
-        btn_soma.setBackground(new Color(78,43,181));
+        btn_soma.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_somaMouseEntered
 
     private void btn_somaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_somaMouseExited
         // TODO add your handling code here:
-        btn_soma.setBackground(new Color(40,46,62));
+        btn_soma.setBackground(new Color(40, 46, 62));
     }//GEN-LAST:event_btn_somaMouseExited
 
     private void btn_7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_7MouseEntered
         // TODO add your handling code here:
-        btn_7.setBackground(new Color(78,43,181));
+        btn_7.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_7MouseEntered
 
     private void btn_7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_7MouseExited
         // TODO add your handling code here:
-        btn_7.setBackground(new Color(51,59,80));
+        btn_7.setBackground(new Color(51, 59, 80));
     }//GEN-LAST:event_btn_7MouseExited
 
     private void btn_8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_8MouseEntered
         // TODO add your handling code here:
-        btn_8.setBackground(new Color(78,43,181));
+        btn_8.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_8MouseEntered
 
     private void btn_8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_8MouseExited
         // TODO add your handling code here:
-        btn_8.setBackground(new Color(51,59,80));
+        btn_8.setBackground(new Color(51, 59, 80));
     }//GEN-LAST:event_btn_8MouseExited
 
     private void btn_9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_9MouseEntered
         // TODO add your handling code here:
-        btn_9.setBackground(new Color(78,43,181));
+        btn_9.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_9MouseEntered
 
     private void btn_9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_9MouseExited
         // TODO add your handling code here:
-        btn_9.setBackground(new Color(51,59,80));
+        btn_9.setBackground(new Color(51, 59, 80));
     }//GEN-LAST:event_btn_9MouseExited
 
     private void btn_4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_4MouseEntered
         // TODO add your handling code here:
-        btn_4.setBackground(new Color(78,43,181));
+        btn_4.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_4MouseEntered
 
     private void btn_4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_4MouseExited
         // TODO add your handling code here:
-        btn_4.setBackground(new Color(51,59,80));
+        btn_4.setBackground(new Color(51, 59, 80));
     }//GEN-LAST:event_btn_4MouseExited
 
     private void btn_5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_5MouseEntered
         // TODO add your handling code here:
-        btn_5.setBackground(new Color(78,43,181));
+        btn_5.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_5MouseEntered
 
     private void btn_5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_5MouseExited
         // TODO add your handling code here:
-        btn_5.setBackground(new Color(51,59,80));
+        btn_5.setBackground(new Color(51, 59, 80));
     }//GEN-LAST:event_btn_5MouseExited
 
     private void btn_6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_6MouseEntered
         // TODO add your handling code here:
-        btn_6.setBackground(new Color(78,43,181));
+        btn_6.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_6MouseEntered
 
     private void btn_6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_6MouseExited
         // TODO add your handling code here:
-        btn_6.setBackground(new Color(51,59,80));
+        btn_6.setBackground(new Color(51, 59, 80));
     }//GEN-LAST:event_btn_6MouseExited
 
     private void btn_1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_1MouseEntered
         // TODO add your handling code here:
-        btn_1.setBackground(new Color(78,43,181));
+        btn_1.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_1MouseEntered
 
     private void btn_1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_1MouseExited
         // TODO add your handling code here:
-        btn_1.setBackground(new Color(51,59,80));
+        btn_1.setBackground(new Color(51, 59, 80));
     }//GEN-LAST:event_btn_1MouseExited
 
     private void btn_2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_2MouseEntered
         // TODO add your handling code here:
-        btn_2.setBackground(new Color(78,43,181));
+        btn_2.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_2MouseEntered
 
     private void btn_2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_2MouseExited
         // TODO add your handling code here:
-        btn_2.setBackground(new Color(51,59,80));
+        btn_2.setBackground(new Color(51, 59, 80));
     }//GEN-LAST:event_btn_2MouseExited
 
     private void btn_3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_3MouseEntered
         // TODO add your handling code here:
-        btn_3.setBackground(new Color(78,43,181));
+        btn_3.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_3MouseEntered
 
     private void btn_3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_3MouseExited
         // TODO add your handling code here:
-        btn_3.setBackground(new Color(51,59,80));
+        btn_3.setBackground(new Color(51, 59, 80));
     }//GEN-LAST:event_btn_3MouseExited
 
     private void btn_0MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_0MouseEntered
         // TODO add your handling code here:
-        btn_0.setBackground(new Color(78,43,181));
+        btn_0.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_0MouseEntered
 
     private void btn_0MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_0MouseExited
         // TODO add your handling code here:
-        btn_0.setBackground(new Color(51,59,80));
+        btn_0.setBackground(new Color(51, 59, 80));
     }//GEN-LAST:event_btn_0MouseExited
 
     private void btn_00MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_00MouseEntered
         // TODO add your handling code here:
-        btn_00.setBackground(new Color(78,43,181));
+        btn_00.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_00MouseEntered
 
     private void btn_00MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_00MouseExited
         // TODO add your handling code here:
-        btn_00.setBackground(new Color(51,59,80));
+        btn_00.setBackground(new Color(51, 59, 80));
     }//GEN-LAST:event_btn_00MouseExited
 
     private void btn_pontoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_pontoMouseEntered
         // TODO add your handling code here:
-        btn_ponto.setBackground(new Color(78,43,181));
+        btn_ponto.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_pontoMouseEntered
 
     private void btn_pontoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_pontoMouseExited
         // TODO add your handling code here:
-        btn_ponto.setBackground(new Color(51,59,80));
+        btn_ponto.setBackground(new Color(51, 59, 80));
     }//GEN-LAST:event_btn_pontoMouseExited
 
     private void btn_minimizarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_minimizarMouseEntered
         // TODO add your handling code here:
-        btn_minimizar.setBackground(new Color(78,43,181));
+        btn_minimizar.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_minimizarMouseEntered
 
     private void btn_minimizarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_minimizarMouseExited
         // TODO add your handling code here:
-        btn_minimizar.setBackground(new Color(40,46,62));
+        btn_minimizar.setBackground(new Color(40, 46, 62));
     }//GEN-LAST:event_btn_minimizarMouseExited
 
     private void btn_sairMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_sairMouseEntered
         // TODO add your handling code here:
-        btn_sair.setBackground(new Color(78,43,181));
+        btn_sair.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_sairMouseEntered
 
     private void btn_sairMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_sairMouseExited
         // TODO add your handling code here:
-        btn_sair.setBackground(new Color(255,0,0));
+        btn_sair.setBackground(new Color(255, 0, 0));
     }//GEN-LAST:event_btn_sairMouseExited
 
     private void btn_resultadoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_resultadoMouseEntered
         // TODO add your handling code here:
-        btn_resultado.setBackground(new Color(78,43,181));
+        btn_resultado.setBackground(new Color(78, 43, 181));
     }//GEN-LAST:event_btn_resultadoMouseEntered
 
     private void btn_resultadoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_resultadoMouseExited
         // TODO add your handling code here:
-        btn_resultado.setBackground(new Color(83,179,105));
+        btn_resultado.setBackground(new Color(83, 179, 105));
     }//GEN-LAST:event_btn_resultadoMouseExited
 
     /**
@@ -1080,12 +1083,12 @@ public class Main extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
-        
+
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        /*
+ /*
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -1103,8 +1106,8 @@ public class Main extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        */
-        /* Create and display the form */
+         */
+ /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Main().setVisible(true);
