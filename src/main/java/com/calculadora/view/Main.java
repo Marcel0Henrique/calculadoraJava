@@ -192,6 +192,14 @@ public class Main extends javax.swing.JFrame {
         btn_divisao.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         btn_divisao.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_divisao.setFocusPainted(false);
+        btn_divisao.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btn_divisaoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btn_divisaoMouseExited(evt);
+            }
+        });
         btn_divisao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_divisaoActionPerformed(evt);
@@ -264,6 +272,14 @@ public class Main extends javax.swing.JFrame {
         btn_subtrair.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         btn_subtrair.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_subtrair.setFocusPainted(false);
+        btn_subtrair.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btn_subtrairMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btn_subtrairMouseExited(evt);
+            }
+        });
         btn_subtrair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_subtrairActionPerformed(evt);
@@ -276,6 +292,14 @@ public class Main extends javax.swing.JFrame {
         btn_soma.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         btn_soma.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_soma.setFocusPainted(false);
+        btn_soma.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btn_somaMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btn_somaMouseExited(evt);
+            }
+        });
         btn_soma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_somaActionPerformed(evt);
@@ -750,6 +774,36 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
         btn_multiplicar.setBackground(new Color(40,46,62));
     }//GEN-LAST:event_btn_multiplicarMouseExited
+
+    private void btn_divisaoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_divisaoMouseEntered
+        // TODO add your handling code here:
+        btn_divisao.setBackground(new Color(78,43,181));
+    }//GEN-LAST:event_btn_divisaoMouseEntered
+
+    private void btn_divisaoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_divisaoMouseExited
+        // TODO add your handling code here:
+        btn_divisao.setBackground(new Color(40,46,62));
+    }//GEN-LAST:event_btn_divisaoMouseExited
+
+    private void btn_subtrairMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_subtrairMouseEntered
+        // TODO add your handling code here:
+        btn_subtrair.setBackground(new Color(78,43,181));
+    }//GEN-LAST:event_btn_subtrairMouseEntered
+
+    private void btn_subtrairMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_subtrairMouseExited
+        // TODO add your handling code here:
+        btn_subtrair.setBackground(new Color(40,46,62));
+    }//GEN-LAST:event_btn_subtrairMouseExited
+
+    private void btn_somaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_somaMouseEntered
+        // TODO add your handling code here:
+        btn_soma.setBackground(new Color(78,43,181));
+    }//GEN-LAST:event_btn_somaMouseEntered
+
+    private void btn_somaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_somaMouseExited
+        // TODO add your handling code here:
+        btn_soma.setBackground(new Color(40,46,62));
+    }//GEN-LAST:event_btn_somaMouseExited
 
     /**
      * @param args the command line arguments
