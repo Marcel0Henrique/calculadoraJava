@@ -8,6 +8,7 @@ import groovy.lang.Binding;
 import groovy.lang.GroovyShell;
 import java.awt.Color;
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 
 /**
  *
@@ -854,6 +855,7 @@ public class Main extends javax.swing.JFrame {
             } else {
                 tfd_formula.setText("");
                 tfd_result.setText(gshell.evaluate(formula).toString());
+                formula = "";
             }
         } catch (Exception e) {
             tfd_result.setText("ERRO");
@@ -1084,6 +1086,7 @@ public class Main extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        
         /* Set the Nimbus look and feel */
 
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -1112,6 +1115,7 @@ public class Main extends javax.swing.JFrame {
  /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                
                 new Main().setVisible(true);
             }
         });
